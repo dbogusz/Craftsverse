@@ -49,7 +49,7 @@ def fetch_etsy_data(access_token, client_id, refresh_token, min_price, max_price
              print('There were approximately ' + str(len(data[0]['results'])*offset_division) + ' data points collected.')
 
 def run_flask_app():
-    return subprocess.Popen(['python', 'etsy_oauth.py'])
+    return subprocess.Popen(['python', 'etsy_oauth_copy.py'])
 
 def get_tokens():
     # Wait for the user to authorize and the server to save token_data.json
